@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row top-row">
+        <div class="header-text">
+            <h1>Bail Applications</h1>
+            <p class="header-description">
+                We assist clients with bail applications, ensuring a smooth process from the initial request to bail condition modifications. 
+                Whether you're seeking release or appealing a denial, our team works tirelessly to secure the best possible outcome for your case.
+            </p>
+        </div>
+    </div>
+    <div class="row services">
+        <div class="imm-container">
+            <h2>Bail Application Services</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let service of bailApplicationServices" class="imm-item">
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+

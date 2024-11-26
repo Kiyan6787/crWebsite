@@ -1,0 +1,59 @@
+.container-fluid {
+    margin-top: 20px;
+}
+
+.row {
+    height: auto;
+}
+
+.img-col {
+    padding: 0; 
+    height: 100%; 
+}
+
+.img-fluid {
+    width: 90%;
+    height: 90%; 
+    object-fit: cover; 
+}
+
+h1,h4 {
+    font-family: "Playfair Display", serif;
+}
+
+.text {
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.contactBtn {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    border: var(--b) solid var(--color);
+    border-radius: var(--s);
+    background: var(--color);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .3s, color .3s;
+}
+
+.contactBtn:hover {
+    background: white;
+    color: var(--color);
+}
+
+@media (max-width: 768px) {
+    .img-col {
+        display: none  ;
+    }
+
+    .text-content {
+        height: auto;
+        margin-bottom: 40px;
+    }
+}

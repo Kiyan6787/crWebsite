@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row top-row">
+        <div class="header-text">
+            <h1>Family Law</h1>
+            <p class="header-description">
+                Our family law services cover everything from divorce and child custody to adoption and domestic violence protection. 
+                We offer compassionate legal support to help you navigate sensitive family matters with care and confidence.
+            </p>
+        </div>
+    </div>
+    <div class="row services">
+        <div class="imm-container">
+            <h2>Family Law Services</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let service of familyLawServices" class="imm-item">
+              <h3>{{ service.titel }}</h3>
+              <p>{{ service.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

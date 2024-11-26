@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="header">
+            <h2>See what our clients say about us.</h2>
+        </div>
+        
+        <div *ngIf="testimonials && testimonials.length > 0" class="carousel-container">
+            <p *ngFor="let slide of testimonials; let i=index" 
+            [ngClass]="{'slide-active': selectedIndex === i}"
+            class="testimony"
+            >
+             <span class="testimonial-text">{{slide.testimony}}</span>
+             <span class="testimonial-name">- {{slide.name}}</span>
+         </p>
+        
+                <div *ngIf="indicators" class="carousel-dot-container">
+                    <span *ngFor="let dot of testimonials; let i=index" 
+                    class="dot"
+                    [ngClass]="{'active': selectedIndex === i}"
+                    (click)="selectSlide(i)"
+                    >
+                    </span>
+                </div>
+        
+                <button *ngIf="controls" class="btn-carousel btn-prev" (click)="prevSlide()">
+                    <i class="fas fa-arrow-circle-left icon-carousel icon-prev">
+                    </i>
+                </button>
+                <button *ngIf="controls" class="btn-carousel btn-next" (click)="nextSlide()">
+                    <i class="fas fa-arrow-circle-right icon-carousel icon-next">
+                    </i>
+                </button>
+        </div>
+    </div>
+</div>

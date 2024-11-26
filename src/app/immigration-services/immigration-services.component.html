@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="row top-row">
+        <div class="header-text">
+            <h1>Immigration & Emmigration Services</h1>
+            <p class="header-description">
+                We offer expert guidance for individuals and families looking to move across borders. 
+                Whether you need help with visa applications, residency permits, or citizenship, our services ensure a smooth transition. 
+                We specialize in work, study, and family visas, making your journey abroad easier and hassle-free.
+            </p>
+        </div>
+    </div>
+    <div class="row services">
+        <div class="imm-container">
+            <h2>Visas</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let visa of visaServices" class="imm-item">
+              <h3>{{ visa.title }}</h3>
+              <p>{{ visa.description }}</p>
+            </div>
+        </div>
+        <div class="imm-container">
+            <h2>Permanent Residency Services</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let visa of prServices" class="imm-item">
+              <h3>{{ visa.title }}</h3>
+              <p>{{ visa.description }}</p>
+            </div>
+        </div>
+        <div class="imm-container">
+            <h2>Citizenship</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let visa of citizenshipServices" class="imm-item">
+              <h3>{{ visa.title }}</h3>
+              <p>{{ visa.description }}</p>
+            </div>
+        </div>
+        <div class="imm-container">
+            <h2>Legal and Consultancy Services</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let visa of legalServices" class="imm-item">
+              <h3>{{ visa.title }}</h3>
+              <p>{{ visa.description }}</p>
+            </div>
+        </div>
+        <div class="imm-container">
+            <h2>Temporary Residency Services</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let visa of trServices" class="imm-item">
+              <h3>{{ visa.title }}</h3>
+              <p>{{ visa.description }}</p>
+            </div>
+        </div>
+          
+    </div>
+</div>
+
+<div class="scroll-container">
+    <div class="scroll-line"></div>
+    <div class="plane-icon" [style.top]="planePosition + '%'">
+        <i class="fa-solid fa-plane-up"></i>
+    </div>
+</div>

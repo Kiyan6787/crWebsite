@@ -1,0 +1,134 @@
+.container-fluid {
+    height: auto;
+}
+
+/* Top row styles */
+.top-row {
+    background-color: #f9f6f1;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Playfair Display", serif;
+}
+
+.header-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.header-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #7f8c8d;
+}
+
+/* Text content styles */
+.text-content {
+    padding: 2rem 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Social icons styles */
+.socials {
+    margin-bottom: 1rem;
+}
+
+.socials .nav-link {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.socials .nav-link:hover {
+    color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-row {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .formBtn {
+        margin-bottom: 0;
+    }
+}
+
+.contactBtn {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    border: var(--b) solid var(--color);
+    border-radius: var(--s);
+    background: var(--color);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .3s, color .3s;
+}
+
+.contactBtn:hover {
+    background: white;
+    color: var(--color);
+}
+
+.formBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+
+.form-info {
+    font-size: small;
+    font-style: italic;
+    margin-top: 0.5rem;
+}

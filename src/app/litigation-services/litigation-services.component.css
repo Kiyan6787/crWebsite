@@ -1,0 +1,60 @@
+.container-fluid {
+    margin-top: 70px;
+  }
+  
+  .top-row {
+    background-color: #f9f6f1;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .top-row h1 {
+    font-family: "Playfair Display", serif;
+  }
+  
+  .header-description {
+    font-size: 1.2rem;;
+  }
+  
+  .imm-container {
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+  }
+  
+  .imm-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .imm-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    height: 10vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imm-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imm-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .imm-item p {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 800px) {
+    .imm-item  {
+      height: auto;
+    }
+  }

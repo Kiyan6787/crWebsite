@@ -1,0 +1,27 @@
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-fluid h1 {
+    margin-bottom: 10px;
+    font-size: 150px;
+    background: linear-gradient(90deg, rgba(0,5,36,1) 26%, rgba(255,0,0,1) 47%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.container-fluid h6 {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.container-fluid p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}

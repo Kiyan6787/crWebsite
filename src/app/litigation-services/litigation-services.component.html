@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row top-row">
+        <div class="header-text">
+            <h1>Litigation Services</h1>
+            <p class="header-description">
+                We provide comprehensive litigation services, representing clients in civil, criminal, and commercial disputes. 
+                Whether you're facing a personal injury claim, employment conflict, or intellectual property issue, 
+                our experienced legal team is here to advocate for your rights in court.
+            </p>
+        </div>
+    </div>
+    <div class="row services">
+        <div class="imm-container">
+            <h2>Litigation Services</h2> <!-- Main Sub-heading -->
+            
+            <div *ngFor="let service of litigationServices" class="imm-item">
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

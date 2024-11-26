@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f6f1;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 80%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.services-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column; /* Stacks the heading and description vertically */
+    max-width: 70%; /* Adjusts width of text to make space for the button */
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        display: none;   
+    }
+
+    .services-container h2 {
+        text-align: center;
+    }
+}
+
+.service:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-color: red; 
+    background-color: #f8f9fa; 
+}
+
+.servicebutton {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .servicebutton:hover,
+  .servicebutton:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .servicebutton:active {
+    background: var(--color);
+    color: #fff;
+  }
+
+  h2, h3 {
+    font-family: "Playfair Display", serif;
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
+  }
