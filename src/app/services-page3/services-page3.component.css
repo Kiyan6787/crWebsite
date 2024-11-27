@@ -82,7 +82,7 @@ h2 {
         align-items: center;
     }
     .service {
-        width: 80%; /* For mobile, stack the columns */
+        width: 90%; /* For mobile, stack the columns */
         margin-bottom: 1.5rem;
     }
 }

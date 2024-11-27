@@ -65,7 +65,7 @@
     }
     
     .home-page-logo {
-      width: 30vw;
+      width: 33vw;
       height: 25vh;
       margin-top: 50px;
       margin-bottom: 0px;
@@ -96,6 +96,7 @@
     .text-content {
       height: 100vh;
       margin-top: 0;
+      border-bottom: #ff0000 solid 2px;
     }
   }
 
