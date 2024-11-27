@@ -25,6 +25,6 @@ export class ContactPageComponent implements OnInit {
     this.meta.updateTag({ property: 'og:title', content: 'Contact Us - Get in Touch' });
     this.meta.updateTag({ property: 'og:description', content: 'Have a question or need more information? Contact us via phone or email, and let us see if we can help you.' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'http://yourdomain.com/contact-us' });
+    this.meta.updateTag({ property: 'og:url', content: 'http://ramjanumcattorneys.co.za/contact-us' });
   }
 }

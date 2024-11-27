@@ -45,7 +45,6 @@ export class LitigationServicesComponent implements OnInit {
     this.meta.updateTag({ property: 'og:title', content: 'Comprehensive Litigation Services' });
     this.meta.updateTag({ property: 'og:description', content: 'We provide comprehensive litigation services, representing clients in civil, criminal, and commercial disputes. Our experienced legal team advocates for your rights in court.' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'http://yourdomain.com/litigation-services' });
-    this.meta.updateTag({ property: 'og:image', content: 'http://yourdomain.com/path-to-your-image.jpg' });
+    this.meta.updateTag({ property: 'og:url', content: 'http://ramjanumcattorneys.co.za/litigation-services' });
   }
 }

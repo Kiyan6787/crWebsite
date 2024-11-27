@@ -37,6 +37,6 @@ export class BailApplicationsComponent implements OnInit {
     this.meta.updateTag({ property: 'og:title', content: 'Bail Applications - Expert Legal Assistance' });
     this.meta.updateTag({ property: 'og:description', content: 'We assist clients with bail applications, ensuring a smooth process from initial request to appeal.' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'http://yourdomain.com/bail-applications' });
+    this.meta.updateTag({ property: 'og:url', content: 'https://ramjanumcattorneys.co.za/bail-applications' });
   }
 }

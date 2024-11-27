@@ -29,8 +29,8 @@ export class TestimonialsComponent implements OnInit {
     this.meta.updateTag({ property: 'og:title', content: 'Client Testimonials | What Our Clients Say' });
     this.meta.updateTag({ property: 'og:description', content: 'Read what our clients say about us. Discover testimonials showcasing our commitment to providing excellent legal services.' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'http://yourdomain.com/testimonials' });
-    this.meta.updateTag({ property: 'og:image', content: 'http://yourdomain.com/path-to-your-image.jpg' });
+    this.meta.updateTag({ property: 'og:url', content: 'http://ramjanumcattorneys.co.za/#testimonials' });
+    this.meta.updateTag({ property: 'og:image', content: 'http://ramjanumcattorneys.co.za/path-to-your-image.jpg' });
   }
 
   autoSlideSlides(): void {

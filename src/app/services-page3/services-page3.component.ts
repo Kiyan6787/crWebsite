@@ -1,18 +1,15 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-services-page2',
+  selector: 'app-services-page3',
   standalone: true,
-  imports: [
-    NgOptimizedImage,
-  ],
-  templateUrl: './services-page2.component.html',
-  styleUrl: './services-page2.component.css'
+  imports: [],
+  templateUrl: './services-page3.component.html',
+  styleUrl: './services-page3.component.css'
 })
-export class ServicesPage2Component implements OnInit {
+export class ServicesPage3Component implements OnInit {
 
   constructor(private meta: Meta){}
 
@@ -53,4 +50,5 @@ export class ServicesPage2Component implements OnInit {
       window.scrollTo(0, 0);
     });
   }
+
 }

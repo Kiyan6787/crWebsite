@@ -49,6 +49,6 @@ export class FamilyLawServicesComponent implements OnInit {
     this.meta.updateTag({ property: 'og:title', content: 'Family Law Services - Compassionate Legal Support' });
     this.meta.updateTag({ property: 'og:description', content: 'Explore our family law services covering divorce, child custody, adoption, and domestic violence protection. We provide compassionate legal support.' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'http://yourdomain.com/family-law' });
+    this.meta.updateTag({ property: 'og:url', content: 'http://ramjanumcattorneys.co.za/family-law' });
   }
 }
