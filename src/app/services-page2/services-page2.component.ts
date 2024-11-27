@@ -1,11 +1,14 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-services-page2',
   standalone: true,
-  imports: [],
+  imports: [
+    NgOptimizedImage,
+  ],
   templateUrl: './services-page2.component.html',
   styleUrl: './services-page2.component.css'
 })

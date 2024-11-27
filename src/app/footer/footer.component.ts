@@ -10,4 +10,10 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
   email = "cramjanum@gmail.com"
+
+  currentYear: number;
+
+  constructor() {
+    this.currentYear = new Date().getFullYear();
+  }
 }

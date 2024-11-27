@@ -55,5 +55,9 @@ h1,h4 {
     .text-content {
         height: auto;
         margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -96,6 +96,10 @@
     .formBtn {
         margin-bottom: 0;
     }
+
+    /* #mc_embed_signup {
+        padding: 1rem;
+    } */
 }
 
 .contactBtn {
@@ -132,3 +136,36 @@
     font-style: italic;
     margin-top: 0.5rem;
 }
+
+/* #mc_embed_signup {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 1rem; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#mc_embed_signup input,
+#mc_embed_signup select {
+    width: 100%;
+    margin-bottom: 1rem; 
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#mc_embed_signup .button {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #2980b9;
+} */

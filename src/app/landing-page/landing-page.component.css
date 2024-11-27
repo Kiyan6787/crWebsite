@@ -89,6 +89,10 @@
       padding: 10px;
     }
 
+    .img-col {
+      display: none;
+    }
+
     .text-content {
       height: 100vh;
       margin-top: 0;

@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-about-page',
   standalone: true,
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
 })
