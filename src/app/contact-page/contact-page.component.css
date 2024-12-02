@@ -116,6 +116,7 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: background .3s, color .3s;
+    margin-bottom: 1rem;
 }
 
 .contactBtn:hover {

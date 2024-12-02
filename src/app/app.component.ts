@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { LandingPageComponent } from "./landing-page/landing-page.component";
 import { ServicesComponent } from "./services-page/services.component";
@@ -18,4 +18,6 @@ import { FooterComponent } from "./footer/footer.component";
 })
 export class AppComponent {
   title = 'crWebsite';
+
+  constructor(private router: Router){}
 }

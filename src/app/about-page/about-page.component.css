@@ -9,12 +9,14 @@
 .img-col {
     padding: 0; 
     height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-fluid {
-    width: 90%;
-    height: 90%; 
-    object-fit: cover; 
+    width: 80%;
+    height: 80vh; 
 }
 
 h1,h4 {
@@ -27,8 +29,8 @@ h1,h4 {
 }
 
 .contactBtn {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
+    --b: 3px;  
+    --s: .45em; 
     --color: #373B44;
     
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
