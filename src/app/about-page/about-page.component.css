@@ -55,11 +55,19 @@ h1,h4 {
     }
 
     .text-content {
-        height: auto;
-        margin-bottom: 40px;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-bottom: red solid 2px;
+    }
+
+    .text {
+        width: 100%; /* Take full width on mobile */
+        font-size: 1rem; /* Smaller font for better readability */
+        margin-bottom: 20px;
     }
 }
