@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-family-law-services',
@@ -36,7 +36,13 @@ export class FamilyLawServicesComponent implements OnInit {
     },
   ];
 
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Family Law Services - Ramjanum C Attorneys');
+    this.meta.updateTag({ 
+      name: 'description', 
+      content: 'Comprehensive family law legal services including divorce, maintenance, and more.' 
+    });
+  }
 
   ngOnInit(): void {
     this.setMetaTags();

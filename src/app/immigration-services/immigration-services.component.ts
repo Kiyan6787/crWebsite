@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-immigration-services',
@@ -13,19 +13,18 @@ import { Meta } from '@angular/platform-browser';
 })
 export class ImmigrationServicesComponent implements OnInit {
 
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Immigration Services - Ramjanum C Attorneys');
+    this.meta.updateTag({ 
+      name: 'description', 
+      content: 'Comprehensive immigration legal services including visa applications, permits, and more.' 
+    });
+  }
 
   ngOnInit(): void {
-    // Update Description
     this.meta.updateTag({ name: 'description', content: 'Explore our Immigration and Emigration Services offering expert guidance for individuals and families seeking to move across borders. We assist with visa applications, residency permits, and citizenship.' });
-    
-    // Update Keywords
     this.meta.updateTag({ name: 'keywords', content: 'Immigration services, Emigration services, Visa applications, Residency permits, Citizenship services, Work visa, Study visa, Family visa, Permanent residency, Temporary residency' });
-
-    // Update Author
     this.meta.updateTag({ name: 'author', content: 'CR Attorneys' });
-    
-    // Update Robots
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
   }
 

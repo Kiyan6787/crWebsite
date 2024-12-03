@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-litigation-services',
@@ -32,7 +32,13 @@ export class LitigationServicesComponent implements OnInit {
     },
   ];
 
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Litigation Services - Ramjanum C Attorneys');
+    this.meta.updateTag({ 
+      name: 'description', 
+      content: 'Comprehensive immigration legal services including visa applications, permits, and more.' 
+    });
+  }
 
   ngOnInit(): void {
     this.setMetaTags();

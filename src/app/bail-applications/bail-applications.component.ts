@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-bail-applications',
@@ -24,7 +24,13 @@ export class BailApplicationsComponent implements OnInit {
     },
   ];
 
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Bail Application Services - Ramjanum C Attorneys');
+    this.meta.updateTag({ 
+      name: 'description', 
+      content: 'Comprehensive bail application legal services' 
+    });
+  }
 
   ngOnInit(): void {
     this.setMetaTags();
