@@ -1,119 +1,105 @@
+:root {
+  --primary-color: #333;
+  --text-color: #555;
+  --background-gradient: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#home-section {
+  min-height: 100vh;
+  width: 100%;
+}
+
 .container-fluid {
   padding: 0;
 }
 
-.row {
-  height: 100vh; /* Full viewport height */
-}
-
+/* Text content styles */
 .text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   background-color: white;
-  margin-top: 15rem;
+  height: 100vh;
 }
 
 .home-page-logo {
-  width: 8vw; 
-  height: 15vh;
-  margin-bottom: 20px;
+  width: clamp(100px, 8vw, 200px);
+  height: auto;
+  margin-bottom: 2rem;
+  object-fit: contain;
 }
 
 .tagline {
   font-family: 'Times New Roman', serif;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: bold;
-  margin: 20px 0;
-  color: #333;
+  margin: 1rem 0;
+  color: var(--primary-color);
+  line-height: 1.2;
 }
 
 .description {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: #555;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  max-width: 600px;
 }
 
 .learn-more {
-  padding: 10px 20px;
-  background-color: #333;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
+.learn-more:hover {
+  background-color: #555;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Image column styles */
 .img-col {
-  background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+  background: var(--background-gradient);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  padding: 2rem;
 }
 
 .lawyer-img {
-  max-width: 80%;
-  height: 80vh;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
   border-radius: 5px;
-  transition: transform 0.5s ease; /* Smooth transition effect */
+  transition: transform 0.5s ease;
 }
 
 .lawyer-img:hover {
-  transform: translateY(-40px); /* Move the image upward */
+  transform: translateY(-20px);
 }
 
-@media (max-width: 768px) {
-  .row {
-      height: auto; /* Remove full height for mobile */
-  }
-
-  /* Adjust logo size for mobile */
-  .home-page-logo {
-      width: 33vw;
-      height: 25vh;
-      margin-top: 50px;
-      margin-bottom: 0px;
-  }
-
-  /* Adjust text and tagline sizes */
-  .tagline {
-      font-size: 2rem;
-  }
-
-  .description {
-      font-size: 1rem;
-  }
-
-  .learn-more {
-      font-size: 1rem;
-  }
-
-  /* Adjust image for mobile */
-  .lawyer-img {
-      max-width: 100%; /* Make image responsive */
-      height: auto; /* Maintain aspect ratio */
-      padding: 10px;
-  }
-
-  /* Hide image on mobile */
-  .img-col {
-      display: none;
-  }
-
-  /* Adjust text section on mobile */
-  .text-content {
-      height: 100vh;
-      margin-top: 0;
-      border-bottom: #ff0000 solid 2px;
-  }
+/* Animations */
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 
-@media (min-width: 768px) {
-  .home-page-logo {
-      margin-top: -200px; /* Adjust logo positioning for larger screens */
-  }
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
 }
 
 @keyframes slideInFromLeft {
@@ -138,10 +124,57 @@
   }
 }
 
-.slide-in-left {
-  animation: slideInFromLeft 1s ease-out forwards;
+/* Responsive breakpoints */
+@media (max-width: 991.98px) {
+
+  .text-content {
+      height: auto;
+      min-height: 100vh;
+      padding: 4rem 2rem;
+  }
+
+  .img-col {
+      display: none;
+  }
+
+  .lawyer-img {
+      max-height: 100%;
+  }
+
+  .home-page-logo {
+      margin-bottom: 1.5rem;
+  }
 }
 
-.slide-in-right {
-  animation: slideInFromRight 1s ease-out forwards;
+@media (max-width: 767.98px) {
+  .text-content {
+      padding: 3rem 1.5rem;
+  }
+
+  .img-col {
+      display: none;
+  }
+
+  .tagline {
+      font-size: 1.8rem;
+  }
+
+  .lawyer-img:hover {
+      transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .text-content {
+      padding: 2rem 1rem;
+  }
+
+  .img-col {
+      height: 30vh;
+      min-height: 250px;
+  }
+
+  .description {
+      font-size: 0.9rem;
+  }
 }
